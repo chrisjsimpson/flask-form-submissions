@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+  {{ super() }}
+  <style type="text/css">
+    .important { color: #336699; }
+  </style>
+{% endblock %}
+{% block content %}
+
+<div class="starter-template">
+
+<h1>Sign up</h1>
+
+<form method="POST">
+
+<label for="name">
+  Name: <input type="text" name="name" id="name" required />
+</label> <br /> <br />
+
+<label for="email">
+  Email: <input type="email" name="email" id="email" required />
+</label>
+
+
+<br />
+<input type="submit" value="Save" />
+
+</form>
+
+
+
+</div>
+
+{% endblock %}
+

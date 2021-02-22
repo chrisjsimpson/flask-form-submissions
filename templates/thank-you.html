@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+  {{ super() }}
+  <style type="text/css">
+    .important { color: #336699; }
+  </style>
+{% endblock %}
+{% block content %}
+
+<div class="starter-template">
+
+<h1>Thank you {{ data.name }}</h1>
+
+Your email: {{ data.email }}
+
+
+</div>
+
+{% endblock %}
+
